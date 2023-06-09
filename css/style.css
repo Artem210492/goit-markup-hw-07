@@ -131,6 +131,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-list-studio {
@@ -176,7 +177,6 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
-  gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -386,7 +386,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 16px 32px;
   border: 1px solid var(--link-customers);
   border-radius: 4px;
   color: var(--link-customers);
@@ -652,18 +651,10 @@ body {
 .button-secondary:hover,
 .button-secondary:focus {
   color: var(--primary-bg-color);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
+  border: 1px solid transparent;
   background-color: var(--btn-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  border: 1px solid transparent;
 }
 
 .portfolio-list-img-wrapper {
@@ -836,7 +827,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
@@ -875,8 +866,7 @@ body {
 .checkbox-own:checked + .checkbox-wrapper > .checkbox-icon {
   background-color: var(--btn-hover-color);
   border: none;
-  fill: var(--primary-bg-color);
-  border-color: var(--btn-hover-color);
+  fill: #f4f4fd;
 }
 
 .checkbox-icon {
